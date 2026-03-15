@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+/* 프로즈 스타일 커스터마이징 */
+.prose h2 {
+  @apply mt-8 mb-4 text-2xl font-bold text-gray-900;
+}
+
+.prose h3 {
+  @apply mt-6 mb-3 text-xl font-semibold text-gray-800;
+}
+
+.prose ul {
+  @apply my-4 pl-6 list-disc;
+}
+
+.prose ol {
+  @apply my-4 pl-6 list-decimal;
+}
+
+.prose a {
+  @apply text-blue-600 underline hover:text-blue-800;
+}
+
+.prose blockquote {
+  @apply border-l-4 border-blue-500 pl-4 italic text-gray-700;
+}
