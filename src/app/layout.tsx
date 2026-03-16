@@ -27,10 +27,13 @@ export default function RootLayout({
             <a href="/" className="text-xl font-bold text-gray-900">
               📘 가이드 센터
             </a>
-            <div className="flex gap-6">
+            <div className="flex gap-6 items-center">
               <a href="/guide" className="text-gray-600 hover:text-gray-900">가이드</a>
               <a href="/faq" className="text-gray-600 hover:text-gray-900">FAQ</a>
               <a href="/case-study" className="text-gray-600 hover:text-gray-900">사례</a>
+              <a href="/generate" className="px-4 py-2 bg-blue-600 text-white text-sm font-semibold rounded-lg hover:bg-blue-700 transition">
+                🚀 콘텐츠 생성
+              </a>
             </div>
           </div>
         </nav>
